@@ -1,5 +1,5 @@
 pub fn format(word: &str) -> String {
-    let vowels = vec!['а', 'я', 'у', 'ю', 'о', 'е', 'ё', 'э', 'и', 'ы'];;
+    let vowels = vec!['а', 'я', 'у', 'ю', 'о', 'е', 'ё', 'э', 'и', 'ы'];
 
     let mut char_iter = word.chars();
 

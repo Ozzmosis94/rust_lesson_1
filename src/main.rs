@@ -1,9 +1,9 @@
 use std::{collections::HashMap, io};
 
 use crate::{
-    latin::{format, pig_latin::convert},
+    latin::format,
     numbers::{average_of_list, median_of_list, mode_of_list},
-    organization::{parse_str, parse_str_lifetime},
+    organization::parse_str_lifetime,
 };
 
 mod latin;
@@ -21,10 +21,12 @@ fn main() {
 
     let mut map = HashMap::new();
 
+    // Пример строки Add {name} to {corp} 
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
     parse_str_lifetime(&mut map, &input);
 
+    // Пример строки Add {name} to {corp} 
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
     parse_str_lifetime(&mut map, &input);
