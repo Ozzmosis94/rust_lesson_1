@@ -8,8 +8,6 @@ pub fn median_of_list(list: &Vec<i32>) -> f32 {
     let mut list: Vec<i32> = list.clone();
     list.sort();
 
-    // list.sort();
-
     if list.len() % 2 == 0 {
         let right_number = list[list.len() / 2] as f32;
         let left_number = list[(list.len() / 2) - 1] as f32;

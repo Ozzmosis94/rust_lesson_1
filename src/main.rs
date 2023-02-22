@@ -23,12 +23,10 @@ fn main() {
 
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-
     parse_str_lifetime(&mut map, &input);
 
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-
     parse_str_lifetime(&mut map, &input);
 
     dbg!(map);
